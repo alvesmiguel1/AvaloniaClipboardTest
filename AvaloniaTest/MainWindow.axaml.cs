@@ -32,9 +32,10 @@ namespace AvaloniaTest {
             });
         }
 
-        private void OnPasteButtonClick(object sender, RoutedEventArgs e) {
+        private async void OnPasteButtonClick(object sender, RoutedEventArgs e) {
             var result = Application.Current.Clipboard.GetDataAsync(RandomFormat).Result as byte[];
-            Console.WriteLine("Clipboard is " + (result == null ? "null" : "not null") + "!");
+
+            await Message.Show(this, result == null);
         }
     }
 }

@@ -6,7 +6,7 @@
         x:Class="AvaloniaTest.MainWindow"
         Title="AvaloniaTest">
     <StackPanel>
-        <Button Width="160" Click="OnCopyButtonClick">Simulate Copy</Button>
-        <Button Width="160" Click="OnPasteButtonClick">Simulate Paste</Button>
+        <Button Width="260" Click="OnCopyButtonClick">Simulate Copy (Random Byte Array)</Button>
+        <Button Width="260" Click="OnPasteButtonClick">Simulate Paste</Button>
     </StackPanel>
 </Window>
